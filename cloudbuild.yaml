@@ -1,9 +1,9 @@
 steps:
 - name: "gcr.io/cloud-builders/kubectl"
-  args: ['get', 'nodes']
+  args: ['create', '-t', 'pod', 'nginx', '--image','nginx']
   env:
   - 'CLOUDSDK_COMPUTE_REGION=us-central1'
   - 'CLOUDSDK_CONTAINER_CLUSTER=private-cluster'
-options:
-  workerPool:
-    'projects/cluster-build/locations/us-central1/workerPools/build-pool'
+#options:
+#  workerPool:
+#    'projects/cluster-build/locations/us-central1/workerPools/build-pool'
