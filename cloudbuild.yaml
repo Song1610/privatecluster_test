@@ -4,6 +4,6 @@ steps:
   env:
   - 'CLOUDSDK_COMPUTE_REGION=us-central1'
   - 'CLOUDSDK_CONTAINER_CLUSTER=private-cluster'
-#options:
-#  workerPool:
-#    'projects/cluster-build/locations/us-central1/workerPools/build-pool'
+options:
+  workerPool:
+    'projects/cluster-build/locations/us-central1/workerPools/build-pool'
